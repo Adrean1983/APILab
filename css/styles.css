@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../redditalien.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Slab', serif;
+}
+.nav {
+    height: 130px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.nav > img {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    width: 50%; 
+    margin: 0 auto;
+    background-color: rgba(245,245,220 , 0.9);
+    padding: 10px;
+}
+
+.post:nth-child(odd) {
+    background-color: rgba(245,245,220 , 0.5);
+}
+.blurb {
+    float: left;
+    width: 35%;
+}
+a {
+    display: block;
+    clear: both;
+}
+img {
+    display: inline;
+    float: right;
+}
+@media only screen and (max-width: 500px) {
+    .post {
+        width: 90%;
+    }
+    .nav {
+        height: 100px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
